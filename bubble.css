@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+
+.top{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-div{
+    margin-top: 80px;
+    overflow: hidden;   
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.input-div input{
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    height: 50px;
+    width: 325px;
+    padding: 10px 10px 5px 5px;
+    background: transparent;
+    font-size: 30px;
+    z-index: 3;
+}
+
+.border-bottom{ 
+    height: 1px;
+    width: 325px;
+    background: linear-gradient(to right, rgb(7, 211, 242), rgb(80, 0, 145));
+    transform: translate(-325px, -1px);
+    transition: 0.2s ease;
+}
+
+input:focus + .border-bottom, input:valid + .border-bottom{
+    transform: translate(0, -1px);
+}
+
+.add-button{
+    top: 15px;
+    right: 0px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.fa{
+    font-size: 20px;
+}
+
+
+.title{
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.content{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    padding: 50px;
+}
+
+.bubble{
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    border: 1px solid #BFBFBF;
+    transition: 0.2s ease ;
+    margin: 40px;
+    position: relative; 
+}
+
+.bubble:hover{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.b1-con{
+    padding: 20px;    a
+}
+
+.b1-con hr{
+    margin: 10px 0 10px 0;
+}
+
+.blur-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    border-radius: 20px;
+    height: 250px;
+    background: white;
+    background: rgba(243, 243, 243, 0.795);;
+    width: 250px;
+    opacity: 0;
+}
+
+.blur-div i{
+    background: rgb(121, 121, 121);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.background{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+::placeholder{
+    color: rgb(196, 196, 196);
+    font-size: 30px;
+    padding: 10px 0 0 0;
+}
+
+.activated-blur-div{
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.desc-input-div{
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid rgb(151, 151, 151);
+    z-index: 9999;
+}
+
+.desInputBtn{
+    font-size: 5px;
+    z-index: 9999;
+}
+
+.des-input{
+    position: relative;
+    border: none;
+    outline: none;
+    /* z-index: 9999; */
+    height: 20px;
+    opacity: 1;
+}
+
+.nonDefH3{
+    width: 40px;
+}
